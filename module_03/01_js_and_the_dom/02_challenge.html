@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <script>
+        var markScore = prompt('Enter your score:');
+        if (markScore >= 70){
+            document.write("<h1>Your score is " + markScore + " and your grade is: A" + "<h1>");
+        } else if (markScore >= 50){
+            document.write("<h1>Your score is " + markScore + " and your grade is: C" + "<h1>");
+        } else if (markScore <= 40){
+            document.write("<h1>Your score is " + markScore + " and your grade is: F" + "<h1>");
+        } else{
+            document.write("<h1>Invalid input score <h1>");
+        }
+    </script>
+    <h1></h1>
+</body>
+</html>
