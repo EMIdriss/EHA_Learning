@@ -3,30 +3,58 @@
     <head>
         <meta charset="utf-8">
         <title>Challenge: Style guide</title>
+        <style>
+            #colorEl {
+            /* Default color for fallback */
+            color: black;
+        }
+
+        #handEl {
+            font-family: Arial, sans-serif;
+        }
+
+        #frameEl {
+            border: 2px solid black;
+            width: 350px;
+        }
+        </style>
     </head>
     <body>
 
     <h1>Style guide</h1>
-
+    <div id="colorEl">
     <p>The hottest color to wear right now is:
         <span id="trendy-color">?</span>
     </p>
-    
+    </div>
+    <div id="handEl">
     <p>This is the trendy way to sign an autograph:
         <span id="trendy-handwriting">?</span>
     </p>
-    
-    <p>This is the trendy way to frame photographs:
+    </div>
+    <div id="frameEl">
+    <p>Hi Buddy!:
         <br>
         <img id="trendy-frame" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png" alt="Cool avatar">
     </p>
-    
+    </div>
     
     <script>
-    var colorEl = document.getElementById("trendy-color");
-    var handEl  = document.getElementById("trendy-handwriting");
-    var frameEl = document.getElementById("trendy-frame");
+    var colorEl = document.getElementById("colorEl");
+
+    colorEl.innerHTML = "This is a hottest color to wear";
+    colorEl.style.color = "purple";
+
+    var handEl  = document.getElementById("handEl");
+
+    handEl.textContent = "This is the trendy way to sign an autograph";
+    handEl.style.fontFamily = "verdana, sans-serif";
+
+    var frameEl = document.getElementById("frameEl");
+
+    frameEl.style.border = "2px solid YourBorderStyle";
+    frameEl.style.color = "Orange";
+
     </script>
-    
     </body>
 </html>

@@ -53,7 +53,14 @@
     </table>
     
         <script>
-var avatarEls = document.getElementsByTagName("img");
+            var avatarEls = document.querySelectorAll("img");
+            for (var i=0; i < avatarEls.length; i++){
+                avatarEls[i].height= "200";
+            }
+
+            for(var i = 0; i < avatarEls.length; i++){
+                avatarEls[i].title = avatarEls[i].alt;
+            }
         </script>
     </body>
 </html>
