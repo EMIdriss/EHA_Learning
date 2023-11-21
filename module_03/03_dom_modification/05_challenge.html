@@ -29,7 +29,44 @@
 
     
     <script>
+        var divEl1 = document.createElement("div");
+        divEl1.classList.add("planet");
+        document.body.appendChild(divEl1);
         
+       // var PlalnetEl = document.getElementsByClassName("planet");
+        divEl1.style.backgroundColor = "orange";
+        divEl1.innerHTML = " SUN";
+
+        var divEl2 = document.createElement("div");
+        divEl2.classList.add("moon");
+        document.body.appendChild(divEl2);
+
+        //var PlalnetE2 = document.getElementsByClassName("moon");
+        divEl2.style.backgroundColor = "white";
+        divEl2.innerHTML = " Moon";
+        divEl2.style.fontSize = "11px";
+
+        var divEl3 = document.createElement("div");
+        divEl3.classList.add("planet");
+        document.body.appendChild(divEl3);
+
+        divEl3.style.height = "30px";
+        divEl3.style.width = "30px";
+        divEl3.style.marginLeft = "40px";
+        divEl3.style.marginTop = "50px";
+        divEl3.style.backgroundColor = "red";
+        divEl3.innerHTML = "Mars";
+        
+        var divEl4 = document.createElement("div");
+        divEl4.classList.add("planet");
+        document.body.appendChild(divEl4);
+
+        divEl4.style.height = "30px";
+        divEl4.style.width = "30px";
+        divEl4.style.marginLeft = "100px";
+        divEl4.style.marginTop = "40px";
+        divEl4.style.backgroundColor = "pink";
+        divEl4.innerHTML = "Venus";
     </script>
     </body>
 </html>
