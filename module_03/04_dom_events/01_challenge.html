@@ -17,7 +17,14 @@
         <div id="cat-chat"></div>
         
         <script>
-        
+            var CatImage = document.getElementById("cat-pic");
+            
+            function catMeow() {
+            var catChat = document.getElementById('cat-chat');
+            catChat.innerText = 'Meow';
+    }
+
+    CatImage.addEventListener('click', catMeow);
         </script>
     </body>
 </html>
