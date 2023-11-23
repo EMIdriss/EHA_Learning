@@ -17,11 +17,20 @@
         
         <script>
             var catPic = document.getElementById("cat-pic");
+            var stashePic = document.getElementById("mustache-pic");
+
             var onCatClick = function(e) {
-                var stashePic = document.getElementById("mustache-pic");  
-                stashePic.style.top = "100px";
-                stashePic.style.left = "100px";
+                //var stashePic = document.getElementById("mustache-pic");
+
+                var stashePicX = e.clientX - catPic.getBoundingClientRect().left - stashePic.width / 2;
+                var stashePicY = e.clientY - catPic.getBoundingClientRect().top - stashePic.height / 2;
+                
+                stashePic.style.top = stashePicX + "px";
+                stashePic.style.left = stashePicY + "px";
+
+                stashePic.style.display = "block";
             };
+            
             catPic.addEventListener("click", onCatClick);
             
         </script>
