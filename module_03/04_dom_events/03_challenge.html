@@ -23,12 +23,17 @@
     <script>
         var libButton = document.getElementById('lib-button');
         var libIt = function() {
+            var NounEl = document.getElementById("noun").value;
+            var AdjectiveEl = document.getElementById("adjective").value;
+            var PersonEl = document.getElementById("person").value;
             var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "??Your story here";
+
+            var story = `A long time ago, there was a ${AdjectiveEl} ${NounEl} who met ${PersonEl}. They had a ${NounEl}-tastic adventure together.`;
+
+            storyDiv.innerHTML = story;
         };
         libButton.addEventListener('click', libIt);
         
     </script>
-  
  </body>
 </html>
