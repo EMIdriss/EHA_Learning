@@ -11,14 +11,22 @@
             <span id="seconds">0</span> seconds have gone by!
         </p>
         <script>
+            var SecondCount = 0;
+            var Interval;
             // Make it count up on a timer, calling this function
             var seconds = document.getElementById("seconds");
             var countUp = function() {
+                SecondCount++;
+                seconds.innerText = SecondCount;
+
                 // ?
             };
+
+            Interval = setInterval(countUp, 1000);
             
             // How can you make it stop counting?
             var stopCountUp = function() {
+                clearInterval(Interval);
             };
             var stopButton = document.getElementById("stop-button");
             stopButton.addEventListener("click", stopCountUp);
