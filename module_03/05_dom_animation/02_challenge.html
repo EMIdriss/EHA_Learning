@@ -23,7 +23,13 @@
   var walkTheCat = function() {
       var currTime = new Date().getTime();
       var secondsElapsed = ((currTime - startTime)/1000);
+
+      var newPosition = 100 * secondsElapsed; 
+            catEl.style.left = newPosition + "px";
+
+            window.requestAnimationFrame(walkTheCat);
   };
+  
   walkTheCat();
   </script>
 
