@@ -2,38 +2,105 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Challenge: The dinner table</title>
+        <title>Challenge: The Recipe Book</title>
+        <style>
+            body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    margin: 20px;
+}
+
+.recipe {
+    margin-bottom: 40px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe h2 {
+    color: #333;
+}
+
+.recipe p.author {
+    color: #666;
+}
+
+.recipe h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.recipe ul,
+.recipe ol {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+        </style>
     </head>
     <body>
 
-        <h1>Our dinner menu</h1>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Meal</th>
-                    <th>Ingredients</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jollof rice</td>
-                    <td>grinded pepper, tomato, maggi cubes, salt, onions and groundnut oil</td>
-                    <td>#750</td>
-                </tr>
-                <tr>
-                    <td>Fried rice</td>
-                    <td>carrot, assorted meat, green beans, green pepper, peas, thyme, curry, groundnut oil, onions and sweet corn</td>
-                    <td>#800</td>
-                    </tr>
-                    <tr>
-                        <td>Moi Moi</td>
-                        <td>made from a mixture of washed and peeled black-eyed beans, onions and fresh ground red peppers</td>
-                        <td>#400</td>
-                    </tr>
-            </tbody>
-        </table>
+        <header>
+            <h1>The Recipe Book</h1>
+        </header>
+    
+        <main>
+    
+            <section class="recipe">
+                <img src="Recipe.png" alt="Pasta">
+                <h2>Spaghetti Bolognese</h2>
+                <p class="author">By: Mohammed Idriss</p>
+                <p class="description">A classic and delicious spaghetti bolognese recipe that everyone will love.</p>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>500g ground beef</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>1 can (400g) crushed tomatoes</li>
+                    <li>1/4 cup tomato paste</li>
+                    <li>1 teaspoon dried oregano</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>300g spaghetti</li>
+                </ul>
+                <h3>Instructions</h3>
+                <ol>
+                    <li>In a large pan, brown the ground beef over medium heat.</li>
+                    <li>Add the chopped onion and minced garlic. Cook until the onion is softened.</li>
+                    <li>Stir in the crushed tomatoes, tomato paste, oregano, salt, and pepper. Simmer for 20 minutes.</li>
+                    <li>Cook the spaghetti according to the package instructions.</li>
+                    <li>Serve the bolognese sauce over the cooked spaghetti. Enjoy!</li>
+                </ol>
+            </section>
+    
+        </main>
+    
+        <footer>
+            <p>&copy; 2023 The Recipe Book</p>
+        </footer>
 
     </body>
 </html>
